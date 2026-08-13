@@ -167,6 +167,45 @@ a:hover {
 .card p{
     color: cadetblue;
 }
+.features{
+    position: relative;
+    width: 88%;
+    
+    margin: auto 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.96);
+    border-radius: 15px;
+    padding: 18px 25px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+.f-box{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 20px;
+    border-right: 1px solid #ddd;
+}
+.f-icon{
+    font-size: 50px;
+    color: #d19a00;
+    min-width: 30px;
+    text-align: center;
+}
+.f-box h4{
+    margin: 0;
+    font-size: 20px;
+    color: #222;
+}
+.f-box p{
+    margin: 4px ;
+    font-size: 20px;
+    color: #abd7a3;
+    font-style: normal;
+
+}
 
 .continer2{
     width: 100%;
