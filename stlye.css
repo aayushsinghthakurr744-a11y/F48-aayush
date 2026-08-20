@@ -12,7 +12,6 @@
 .bigimg{
     position: absolute;
 }
-
  nav {
     display: flex;
     justify-content: space-between;
@@ -202,7 +201,7 @@ a:hover {
     background-color: transparent;   
 }
 
-/* DESTINATION */
+/* DESTINATION page 2 */
 
 
 .continer2 {
@@ -287,9 +286,7 @@ a:hover {
 
     margin-bottom: 8px;
 }
-/* =====================================
-   DESTINATION CARDS
-===================================== */
+
 
 .destination-cards {
 
@@ -309,7 +306,6 @@ a:hover {
 }
 
 
-/* CARD */
 
 .destination-card {
 
@@ -327,7 +323,7 @@ a:hover {
 }
 
 
-/* CARD HOVER */
+
 
 .destination-card:hover {
 
@@ -338,7 +334,7 @@ a:hover {
 }
 
 
-/* CARD IMAGE */
+
 
 .destination-card > img {
 
@@ -352,15 +348,12 @@ a:hover {
 }
 
 
-/* CARD CONTENT */
-
 .card-content {
 
     padding: 8px 10px 10px;
 }
 
 
-/* CARD HEADING */
 
 .card-content h3 {
 
@@ -372,7 +365,7 @@ a:hover {
 }
 
 
-/* CARD DESCRIPTION */
+
 
 .card-content p {
 
@@ -388,7 +381,7 @@ a:hover {
 }
 
 
-/* EXPLORE LINK */
+
 
 .card-content a {
 
@@ -410,11 +403,300 @@ a:hover {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*page 3  */
+
+
+
+
+
+
 .continer3{
     width: 100%;
-    height: 100vh;
-    background-color: rgb(243, 226, 226);
+    background-color: rgb(241, 232, 232);
+    position: relative;
 }
+
+
+
+.package-hero {
+    width: 100%;
+    height: 340px;
+
+    position: relative;
+    overflow: hidden;
+    
+    
+
+    margin: 0;
+    padding: 0;
+}
+
+
+.package-hero > img {
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+    top: 0;
+    left: 0;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+
+.package-hero::after {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.25);
+
+    z-index: 1;
+}
+
+
+
+
+.hero-content {
+    position: absolute;
+
+    top: 120px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    text-align: center;
+
+    color: white;
+
+    z-index: 2;
+
+    width: 90%;
+}
+
+
+.hero-content h1 {
+    font-size: 45px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+
+    text-shadow: 2px 3px 5px rgba(0,0,0,0.6);
+}
+
+
+.hero-content p {
+    font-size: 18px;
+
+    margin-bottom: 10px;
+}
+
+
+.hero-line {
+    font-size: 20px;
+
+    color: white;
+}
+
+
+
+
+.popular-packages {
+
+    width: 100%;
+
+    padding: 18px 30px 40px;
+
+    text-align: center;
+}
+
+
+.popular-packages h2 {
+
+    color: #3b1b7a;
+
+    font-size: 30px;
+
+    margin-bottom: 5px;
+}
+
+
+.package-line {
+
+    color: #3b1b7a;
+
+    font-size: 18px;
+
+    margin-bottom: 20px;
+}
+
+
+
+
+.package-container {
+
+    width: 92%;
+
+    max-width: 1180px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 22px;
+}
+
+
+
+
+.package-card {
+
+    background: white;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    text-align: left;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.18);
+
+    transition: 0.3s ease;
+}
+
+
+
+
+.package-card:hover {
+
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+
+
+
+.package-card > img {
+
+    width: 100%;
+
+    height: 135px;
+
+    object-fit: cover;
+
+    display: block;
+}
+ 
+
+.package-content {
+
+    padding: 12px 15px 15px;
+}
+
+ 
+
+.package-content h3 {
+
+    font-size: 16px;
+
+    color: #222;
+
+    margin-bottom: 8px;
+}
+ 
+
+.package-content p {
+
+    font-size: 13px;
+
+    color: #444;
+
+    line-height: 1.45;
+
+    min-height: 38px;
+
+    margin-bottom: 8px;
+}
+ 
+
+.package-info {
+
+    font-size: 12px;
+
+    color: #444;
+
+    margin-bottom: 8px;
+}
+ 
+
+.package-content h4 {
+
+    color: #3b1b7a;
+
+    font-size: 17px;
+
+    margin-bottom: 5px;
+}
+ 
+
+.package-content a {
+
+    color: #3b1b7a;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+
+.package-content a:hover {
+
+    color: #7042c5;
+}
+
+
+
+
+/* page 4 */
+
+
+
+
+
+
+
+
+
 .continer4{
     width: 100%;
     height: 100vh;
