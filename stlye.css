@@ -1382,16 +1382,16 @@ body {
 }
 
 
-/* MOBILE NAVBAR - SINGLE LINE */
+/* MOBILE NAVBAR - FIXED + SINGLE LINE */
 
 @media (max-width: 600px) {
 
     nav {
-        position: absolute;
+        position: fixed;          /* navbar fixed rahega */
         top: 10px;
         left: 3%;
         width: 94%;
-        height: 65px;
+        height: 60px;
 
         display: flex;
         flex-direction: row;
@@ -1399,9 +1399,11 @@ body {
         align-items: center;
         justify-content: flex-start;
 
-        padding: 5px;
+        padding: 5px 8px;
         gap: 5px;
         box-sizing: border-box;
+
+        z-index: 1000;
     }
 
     .navlogo {
@@ -1415,11 +1417,11 @@ body {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        justify-content: space-between;
+
         align-items: center;
+        justify-content: space-between;
 
         width: 100%;
-        gap: 0;
         margin: 0;
         padding: 0;
     }
@@ -1428,6 +1430,7 @@ body {
         margin: 0;
         padding: 0;
         list-style: none;
+        flex-shrink: 1;
     }
 
     nav a {
