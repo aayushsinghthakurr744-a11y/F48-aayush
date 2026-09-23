@@ -699,11 +699,684 @@ a:hover {
 
 .continer4{
     width: 100%;
-    height: 100vh;
-    background-color: rgb(232, 232, 220);
+    
+    background-color: rgb(248, 228, 246);
 }
+
+/* GALLERY PAGE */
+
+.gallery-container {
+    width: 90%;
+    max-width: 1400px;
+    margin: 60px auto;
+    text-align: center;
+}
+
+/* Heading */
+
+.gallery-heading h1 {
+    font-size: 45px;
+    letter-spacing: 3px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.gallery-heading p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* Gallery Grid */
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* Gallery Card */
+
+.gallery-item {
+    background: white;
+    padding: 10px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.15);
+    transition: 0.4s ease;
+}
+
+/* Images */
+
+.gallery-item img {
+    position: relative;
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+    transition: 0.4s ease;
+}
+
+/* Hover Effect */
+
+.gallery-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+
+
 .continer5{
     width: 100%;
-    height: 100vh;
+    
     background-color: rgb(229, 224, 241);
+}
+
+
+/* CONTACT PAGE */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    background: #f7f6ef;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    position: absolute;
+    top: 25px;
+    left: 3%;
+    width: 94%;
+    height: 110px;
+    background: rgba(255, 255, 240, 0.92);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 10;
+}
+
+.logo h2 {
+    color: #143e55;
+    font-size: 23px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 45px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #123f55;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #d49b38;
+}
+
+
+/* HERO SECTION */
+
+.contact-hero {
+    position: relative;
+    width: 100%;
+    height: 520px;
+    overflow: hidden;
+}
+
+.contact-hero > img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    filter: brightness(65%);
+}
+
+.contact-hero-content {
+    position: absolute;
+    top: 150px;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.contact-hero-content h1 {
+    font-size: 65px;
+    margin: 10px;
+    text-shadow: 3px 3px 5px #222;
+}
+
+.contact-hero-content p {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.contact-hero-content h3 {
+    font-size: 19px;
+    margin-top: 25px;
+}
+
+.hero-line {
+    font-size: 28px;
+    margin: 20px;
+}
+
+
+/* CONTACT SECTION */
+
+/* CONTACT SECTION - FINAL FIX */
+
+.contact-section {
+    width: 90%;
+    max-width: 1450px;
+    margin: 45px auto;
+    display: grid;
+    grid-template-columns: 0.9fr 1.3fr 0.9fr;
+    gap: 30px;
+    align-items: center;
+}
+
+/* Image right side */
+
+.contact-image {
+    grid-column: 3;
+    grid-row: 1;
+    text-align: center;
+}
+
+.contact-image img {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+}
+
+/* Contact information left */
+
+.contact-info {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+/* Form middle */
+
+.contact-form {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+/* CONTACT INFORMATION */
+
+.contact-info h2 {
+    font-size: 38px;
+    color: #12445e;
+    font-style: italic;
+    margin-bottom: 35px;
+}
+
+.info-box {
+    margin-bottom: 28px;
+}
+
+.info-box h3 {
+    color: #12445e;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.info-box p {
+    margin: 5px 0;
+    color: #555;
+    font-size: 16px;
+}
+
+
+/* CONTACT FORM */
+
+.contact-form {
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.12);
+}
+
+.contact-form h2 {
+    color: #12445e;
+    font-size: 30px;
+    margin-top: 0;
+}
+
+.contact-form p {
+    color: #666;
+    font-size: 16px;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 16px;
+    margin-top: 15px;
+    border: 1px solid #d5dce0;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 15px;
+    outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #12516e;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 18px;
+    border: none;
+    border-radius: 8px;
+    background: #07516e;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #d49b38;
+}
+
+
+/* CONTACT IMAGE */
+
+.contact-image {
+    text-align: center;
+}
+
+.contact-image img {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contact-image h2 {
+    color: #12445e;
+    font-style: italic;
+    margin: 8px;
+}
+
+/* responsive */
+
+
+/* =================================
+   RESPONSIVE DESIGN - ALL PAGES
+================================= */
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+/* =================================
+   NAVBAR RESPONSIVE
+================================= */
+
+@media (max-width: 1000px) {
+
+    nav {
+        height: auto;
+        min-height: 65px;
+        padding: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .navlogo {
+        width: 65px;
+        height: 65px;
+        margin-left: 0;
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3px;
+    }
+
+    li {
+        margin: 2px;
+    }
+
+    a {
+        font-size: 14px;
+        padding: 7px 9px;
+    }
+}
+
+
+/* =================================
+   HOME PAGE
+================================= */
+
+@media (max-width: 768px) {
+
+    .continer {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .bigimg {
+        position: relative;
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    .box {
+        top: 100px;
+        left: 5%;
+        width: 90%;
+        padding: 20px;
+    }
+
+    .box h1 {
+        font-size: 40px;
+    }
+
+    .box h5 {
+        font-size: 15px;
+    }
+
+    .travel-intro {
+        margin-top: 40px;
+        margin-left: 5%;
+        width: 90%;
+        padding: 25px 15px;
+    }
+
+    .travel-intro h2 {
+        font-size: 27px;
+    }
+
+    .travel-intro p {
+        font-size: 15px;
+    }
+
+    .six-boxes {
+        width: 90%;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .travel-box {
+        height: 250px;
+    }
+}
+
+
+/* =================================
+   DESTINATION PAGE
+================================= */
+
+@media (max-width: 1000px) {
+
+    .destination-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+        width: 90%;
+    }
+
+    .des-box h1 {
+        font-size: 35px;
+    }
+
+    .des_bigimg {
+        height: 300px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .destination-cards {
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+
+    .des-box {
+        top: 100px;
+    }
+
+    .des-box h1 {
+        font-size: 30px;
+    }
+
+    .des-box p {
+        font-size: 15px;
+    }
+
+    .popular {
+        padding: 20px 10px;
+    }
+
+    .popular h2 {
+        font-size: 25px;
+    }
+}
+
+
+/* =================================
+   PACKAGES PAGE
+================================= */
+
+@media (max-width: 1000px) {
+
+    .package-container {
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+    }
+
+    .package-hero {
+        height: 350px;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .package-container {
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+
+    .package-hero {
+        height: 400px;
+    }
+
+    .hero-content {
+        top: 150px;
+    }
+
+    .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+
+    .popular-packages {
+        padding: 20px 10px;
+    }
+}
+
+
+/* =================================
+   GALLERY PAGE
+================================= */
+
+@media (max-width: 1000px) {
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-heading h1 {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .gallery-container {
+        width: 90%;
+        margin: 35px auto;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .gallery-heading h1 {
+        font-size: 28px;
+        letter-spacing: 1px;
+    }
+
+    .gallery-heading p {
+        font-size: 15px;
+    }
+
+    .gallery-item img {
+        height: 250px;
+    }
+}
+
+
+/* =================================
+   CONTACT PAGE
+================================= */
+
+@media (max-width: 1000px) {
+
+    .contact-hero {
+        height: 450px;
+    }
+
+    .contact-hero-content {
+        top: 160px;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .contact-hero-content h1 {
+        font-size: 45px;
+    }
+
+    .contact-section {
+        grid-template-columns: 1fr 1fr;
+        width: 90%;
+    }
+
+    .contact-info {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .contact-form {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .contact-image {
+        grid-column: 1 / 3;
+        grid-row: 2;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .contact-hero {
+        height: 480px;
+    }
+
+    .contact-hero-content {
+        top: 190px;
+    }
+
+    .contact-hero-content h1 {
+        font-size: 32px;
+    }
+
+    .contact-hero-content p {
+        font-size: 17px;
+    }
+
+    .contact-section {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        gap: 30px;
+    }
+
+    .contact-info,
+    .contact-form,
+    .contact-image {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .contact-info h2 {
+        font-size: 30px;
+    }
+
+    .contact-form {
+        padding: 22px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .contact-image img {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 14px;
+    }
 }
