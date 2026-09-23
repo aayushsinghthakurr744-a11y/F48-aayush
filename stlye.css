@@ -1380,3 +1380,59 @@ body {
         font-size: 14px;
     }
 }
+
+
+/* MOBILE NAVBAR - SINGLE LINE */
+
+@media (max-width: 600px) {
+
+    nav {
+        position: absolute;
+        top: 10px;
+        left: 3%;
+        width: 94%;
+        height: 65px;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: flex-start;
+
+        padding: 5px;
+        gap: 5px;
+        box-sizing: border-box;
+    }
+
+    .navlogo {
+        width: 42px;
+        height: 42px;
+        margin: 0;
+        flex-shrink: 0;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 100%;
+        gap: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    nav a {
+        font-size: 9px;
+        padding: 3px;
+        white-space: nowrap;
+    }
+}
